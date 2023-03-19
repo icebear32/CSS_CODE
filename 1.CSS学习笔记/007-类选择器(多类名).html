@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器 多类名</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .font1 {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .font2{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>类选择器 多类名</h1>
+    <p>
+        可以给一个标签指定多个类名，从而达到更多的选择目的
+    </p>
+
+    <h2>多类名使用方式</h2>
+    <div class="red font1">
+        <ol>
+            <li>在标签class 属性中写 多个类名</li>
+            <li>多个类名中间必须用空格分开</li>
+            <li>这个标签分别具有这些类名的样式</li>
+        </ol>
+    </div>
+
+    <h2>多类名开发中使用场景</h2>
+    <div class="red font2">
+        <ol>
+            <li>相同的样式放到一个类</li>
+            <li>调用这个公共的类,再调用独有的类</li>
+            <li>节省CSS代码,统一修改方便</li>
+        </ol>
+    </div>
+</body>
+
+</html>
