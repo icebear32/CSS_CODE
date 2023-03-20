@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本缩进</title>
+    <style>
+        .div1 p {
+            text-indent: 10px;
+        }
+
+        .div2 p {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>文本缩进</h1>
+    <div class="div1">
+        <p>
+            |text-indent 属性用来指定文本的第一行的缩进，通常是将段落的首行缩进</p>
+        <p>
+            |通过设置该属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值
+        </p>
+        <p>
+            |em 是一个相对单位，就是当前元素（font-size） 1 个文字的大小, 如果当前元素没有设置大小，则会按照父元素的 1 个文字大小
+        </p>
+    </div>
+    <div class="div2">
+        <p>
+            ||text-indent 属性用来指定文本的第一行的缩进，通常是将段落的首行缩进</p>
+        <p>
+            ||通过设置该属性，所有元素的第一行都可以缩进一个给定的长度，甚至该长度可以是负值
+        </p>
+        <p>
+            ||em 是一个相对单位，就是当前元素（font-size） 1 个文字的大小, 如果当前元素没有设置大小，则会按照父元素的 1 个文字大小
+        </p>
+    </div>
+</body>
+
+</html>

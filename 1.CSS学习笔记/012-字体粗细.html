@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体粗细 font-weight</title>
+    <style>
+        .tr1 td {
+            color: cornflowerblue;
+            font-weight: bold;
+        }
+
+        .tr2 td {
+            color: coral;
+            font-weight: normal;
+        }
+
+        .tr3 td {
+            color: cadetblue;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>字体粗细 font-weight</h1>
+    <p>
+        CSS 使用 font-weight 属性设置文本字体的粗细
+    </p>
+
+    <h2>font-weight</h2>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>属性值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td>normal</td>
+                <td>默认值（不加粗）</td>
+            </tr>
+            <tr class="tr2">
+                <td>bold</td>
+                <td>定义粗体（加粗的）</td>
+            </tr>
+            <tr class="tr3">
+                <td>100-900</td>
+                <td>
+                    400等同于normal，而700等同于bold，注意数字后面不跟单位
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

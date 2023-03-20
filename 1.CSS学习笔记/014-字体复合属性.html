@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 字体复合属性</title>
+    <style>
+        body{
+            font: italic 800 16px "微软雅黑";
+        }
+    </style>
+</head>
+<body>
+    <h1>字体复合属性</h1>
+    <p>语法格式</p>
+    <span style="color: red;">
+        body {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        fonyt: font-style font-weight font-size/line-height font-family; <br>
+        }
+    </span>
+
+    <br>
+    <ol>
+        <li>
+            使用 font 属性时，必须按语法格式中的顺序书写，不能更换顺序，并且各个属性间以空格隔开
+        </li>
+        <li>
+            不需要设置的属性可以省略（取默认值），但必须保留 font-size 和 font-family 属性，否则 font 属性将不起作用
+        </li>
+    </ol>
+
+</body>
+</html>
