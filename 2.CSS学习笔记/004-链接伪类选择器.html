@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* a 是标签选择器 所有的链接 */
+        a {
+            font-size: large;
+            color: gray;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            margin-top: 20px;
+            background-color: aquamarine;
+        }
+
+        .div1 a:link {
+            font-size: xx-large;
+            color: coral;
+        }
+
+        .div2 a:visited {
+            color: coral;
+            font-size: xx-large;
+        }
+
+        .div3 a:hover {
+            color: coral;
+        }
+
+        .div4 a:active {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>链接伪类选择器</h1>
+    <p>注意事项</p>
+    <p>按照顺序声明 :link :visited :hover :active</p>
+    <p>因为 a 链接在浏览器中具有默认样式，所以需要给链接单独指定样式</p>
+
+    <div class="div1">
+        <p>设置a对象在未被访问前的样式表属性</p>
+        <a href="#">a:link</a>
+    </div>
+    <div class="div2">
+        <p>设置a对象在其链接地址已被访问过时的样式表属性</p>
+        <a href="www.baidu.com">a:visited</a>
+    </div>
+    <div class="div3">
+        <p>设置对象在其鼠标悬停时的样式表属性</p>
+        <a href="#">a:hover</a>
+    </div>
+    <div class="div4">
+        <p>设置对象在被用户激活（在鼠标点击与释放之间发生的事件）时的样式表属性</p>
+        <a href="#">a:active</a>
+    </div>
+</body>
+
+</html>

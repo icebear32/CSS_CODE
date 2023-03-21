@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        .spanp p {
+            color: coral;
+            font-size: larger;
+        }
+
+        /* 选择 div 里面所有的 p 标签元素 */
+        div p {
+            text-indent: 2em;
+        }
+
+        div ol li {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>后代选择器</h1>
+    <span class="spanp">
+        <p>
+            后代选择器又称为包含选择器，可以选择父元素里面子元素
+        </p>
+    </span>
+
+    <h2>语法</h2>
+    <div>
+        <p>元素1 元素2 { 样式声明 }</p>
+        <p>表示选择元素 1 里面的所有元素 2 (后代元素)</p>
+    </div>
+
+    <p>
+        例如：<br>
+        ol li { 样式声明 } /* 选择 ol 里面所有的 li标签元素 */
+    </p>
+    <h2>注意</h2>
+    <div>
+        <ol>
+            <li>元素间空格隔开</li>
+            <li>元素1 是父级，元素2 是子级，最终选择的是元素2</li>
+            <li>元素2 可以是儿子，孙子等，只要是元素1 的后代即可</li>
+            <li>元素1 和 元素2 可以是任意基础选择器</li>
+        </ol>
+    </div>
+</body>
+
+</html>

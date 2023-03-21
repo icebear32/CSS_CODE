@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素显示模式转换</title>
+    <style>
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: cadetblue;
+            /* 把行内元素 a 转换为 块级元素 */
+            display: block;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: gray;
+            /* 把 div 块级元素转换为行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 300px;
+            height: 100px;
+            background-color: skyblue;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>元素显示模式转换</h1>
+    <p>一个模式的元素需要另外一种模式的特性</p>
+    <p>因此需要元素模式的转换</p>
+
+    <h2>方式</h2>
+    <ol>
+        <li>转换为块元素：display:block;</li>
+        <li>转换为行内元素：display:inline;</li>
+        <li>转换为行内块：display: inline-block;</li>
+    </ol>
+
+    <br>
+    <a href="www.baidu.com">百度</a>
+    <a href="www.bilibili.com">B站</a>
+
+    <br>
+    <div>块级元素转换行内元素</div>
+    <div>块级元素转换行内元素</div>
+
+    <br>
+    <br>
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+</head>
+
+<body>
+    <h1>行内元素</h1>
+    <p>
+        常见的行内元素有 a、strong、b、em、i、del、s、ins、u、span 等，
+    </p>
+    <span>
+        其中span 标签是最典型的行内元素。有的地方也将行内元素称为内联元素
+    </span>
+
+    <h2>特点</h2>
+    <ul>
+        <li>相邻行内元素在一行上，一行可以显示多个</li>
+        <li>高、宽直接设置是无效的</li>
+        <li>默认宽度就是它本身内容的宽度</li>
+        <li>行内元素只能容纳文本或其他行内元素</li>
+    </ul>
+
+    <h2>注意</h2>
+    <p>链接里面不能再放链接</p>
+    <p>
+        特殊情况链接 a 里面可以放块级元素，但是给 a 转换一下块级模式最安全
+    </p>
+    <a href="#" style="display: block;">
+        <div>123</div>
+    </a>
+</body>
+
+</html>
