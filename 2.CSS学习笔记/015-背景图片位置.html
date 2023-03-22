@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片位置</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            background-image: url(../img/1.png);
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .div1 {
+            /* background-position:  方位名词; */
+            background-position: center top;
+        }
+
+        .div2 {
+            /* background-position:  方位名词; */
+            background-position: right center;
+        }
+
+        .div3 {
+            /* 如果是方位名词  right center 和 center right 效果是等价的 跟顺序没有关系 */
+            background-position: center right;
+        }
+
+
+        .div4 {
+            /* 此时 水平一定是靠右侧对齐  第二个参数省略 y 轴是 垂直居中显示的 */
+            background-position: right;
+        }
+
+        .div5 {
+            /* 此时 第一个参数一定是 top y轴顶部对齐   第二个参数省略 x轴 是水平居中显示的 */
+            background-position: top;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>背景图片位置</h1>
+    <p>background-position 属性可以改变图片在背景中的位置</p>
+    <h2>语法</h2>
+    <p>background-position: x y;</p>
+    <p>参数代表的意思是：x 坐标和 y 坐标。 可以使用 方位名词 或者 精确单位</p>
+
+    <br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>参数值</td>
+                <td>说明</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>length</td>
+                <td>百分数│由浮点数字和单位标识符组成的长度值</td>
+            </tr>
+            <tr>
+                <td>position</td>
+                <td>
+                    top | center | bottom | left | center | right方位名词
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <p>div1</p>
+    <div class="div1"></div>
+    <p>div2</p>
+    <div class="div2"></div>
+    <p>div3</p>
+    <div class="div3"></div>
+    <p>div4</p>
+    <div class="div4"></div>
+    <p>div5</p>
+    <div class="div5"></div>
+</body>
+
+</html>

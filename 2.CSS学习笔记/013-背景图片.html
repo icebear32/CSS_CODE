@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background-image: none;
+        }
+
+        .div2 {
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            /* 不要落下 url()   */
+            background-image: url(../img/1.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>背景图片</h1>
+    <p>background-image 属性描述了元素的背景图像</p>
+    <p>background-image : none | url (url)</p>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>参数值</td>
+                <td>作用</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>none</td>
+                <td>无背景图（默认）</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>使用绝对或相对地址指定背景图像</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="div1">none 无背景图</div>
+    <div class="div2"></div>
+</body>
+</html>
