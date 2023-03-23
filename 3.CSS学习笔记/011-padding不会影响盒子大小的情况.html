@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding不会影响盒子大小的情况</title>
+    <style>
+        h1 {
+            /* width: 100%; */
+            /* height: 200px; */
+            background-color: gold;
+            padding: 30px;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: purple;
+        }
+
+        .div1 p {
+            padding: 30px;
+            background-color: skyblue;
+        }
+
+        .div2 p {
+            width: 100%;
+            padding: 30px;
+            background-color: darkorange;
+        }
+
+        .div3 p {
+            height: 100%;
+            padding: 30px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        padding不会影响盒子大小的情况:因为没有指定高度宽度，所以padding没有撑大盒子
+    </h1>
+    <div class="div1">
+        <p>1、不指定宽高，padding没有撑大盒子</p>
+    </div>
+
+    <div class="div2">
+        <p>2、指定宽，padding没有撑大盒子的左右</p>
+    </div>
+
+    <div class="div3">
+        <p>3、指定高，padding没有撑大盒子的上下</p>
+    </div>
+</body>
+
+</html>

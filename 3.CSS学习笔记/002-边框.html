@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+    <style>
+        div {
+            width: 300px;
+            height: 250px;
+            /* border-width 边框的粗细  一般情况下都用 px */
+            border-width: 5px;
+            /* border-style 边框的样式  solid 实线边框   dashed 虚线边框  dotted 点线边框*/
+            border-style: solid;
+            /* border-color 边框的颜色  */
+            border-color: rgb(180, 63, 82);
+        }
+
+        .t1 {
+            width: 300px;
+            height: 200px;
+            /* border-width 边框的粗细  一般情况下都用 px */
+            border-width: 5px;
+            /* border-style 边框的样式  solid 实线边框   dashed 虚线边框  dotted 点线边框*/
+            border-style: dashed;
+            /* border-color 边框的颜色  */
+            border-color: brown;
+        }
+
+        .t2 {
+            width: 300px;
+            height: 200px;
+            /* border-width 边框的粗细  一般情况下都用 px */
+            border-width: 5px;
+            /* border-style 边框的样式  solid 实线边框   dashed 虚线边框  dotted 点线边框*/
+            border-style: dotted;
+            /* border-color 边框的颜色  */
+            border-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>边框</h1>
+        <p>border可以设置元素的边框。边框有三部分组成:边框宽度(粗细) 边框样式 边框颜色</p>
+
+        <h2>语法</h2>
+        <p>
+            border : border-width || border-style || border-color
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <p>border</p>
+    <table class="t1" border="1px">
+        <thead>
+            <tr>
+                <td>属性</td>
+                <td>作用</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>border-width</td>
+                <td>定义边框粗细，单位是px</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td>边框的样式</td>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td>边框颜色</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <p>边框样式 border-style 可以设置如下值：</p>
+    <table class="t2" border="1px">
+        <thead>
+            <tr>
+                <td>属性</td>
+                <td>作用</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>none</td>
+                <td>没有边框即忽略所有边框的宽度（默认值）</td>
+            </tr>
+            <tr>
+                <td>soild</td>
+                <td>边框为单实线(最为常用的)</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>边框为虚线</td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>边框为点线</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
