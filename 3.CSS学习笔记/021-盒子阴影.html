@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            margin-top: 50px;
+        }
+
+        .div2 {
+            box-shadow: 10px 20px;
+        }
+
+        .div3 {
+            box-shadow: 10px 20px 10px;
+        }
+
+        .div4 {
+            box-shadow: 10px 10px 10px 20px;
+        }
+
+        .div4 {
+            box-shadow: 10px 10px 10px 20px rgba(80, 175, 80, 0.3);
+        }
+
+        .div5 {
+            box-shadow: inset 10px 10px 10px 20px rgba(216, 49, 19, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>盒子阴影</h1>
+    <p>使用 box-shadow 属性为盒子添加阴影</p>
+    <h2>语法</h2>
+    <p>
+        box-shadow: h-shadow v-shadow blur spread color inset;
+    </p>
+    <br></br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>h-shadow</td>
+                <td>必需 水平阴影的位置 允许负值</td>
+            </tr>
+            <tr>
+                <td>v-shadow</td>
+                <td>必需 垂直阴影的位置 允许负值</td>
+            </tr>
+            <tr>
+                <td>blur</td>
+                <td>可选 模糊距离</td>
+            </tr>
+            <tr>
+                <td>spread</td>
+                <td>可选 阴影的尺寸</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>可选 阴影的颜色</td>
+            </tr>
+            <tr>
+                <td>insert</td>
+                <td>可选 将外部阴影(outset)改为内部阴影</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+</body>
+</html>

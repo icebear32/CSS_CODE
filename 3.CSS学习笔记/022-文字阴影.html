@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字阴影</title>
+    <style>
+        table thead {
+            text-shadow: 15px -25px;
+        }
+
+        table tfoot {
+            text-shadow: 15px 25px 3px rgba(215, 20, 20, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <h1>文字阴影</h1>
+    <p>使用 text-shadow 属性将阴影应用于文本</p>
+    <h2>语法</h2>
+    <p>text-shadow: h-shadow v-shadow blur color;</p>
+    <br><br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>h-shadow</td>
+                <td>必需 水平阴影的位置 允许负值</td>
+            </tr>
+            <tr>
+                <td>v-shadow</td>
+                <td>必需 垂直阴影的位置 允许负值</td>
+            </tr>
+            <tr>
+                <td>blur</td>
+                <td>可选 模糊距离</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>可选 阴影的颜色</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>11111</td>
+                <td>22222</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

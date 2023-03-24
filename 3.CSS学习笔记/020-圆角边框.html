@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .div2 {
+            /* 数值 */
+            border-radius: 50px;
+        }
+
+        .div3 {
+            /* 百分比 */
+            border-radius: 50%;
+        }
+
+        .div4 {
+            border-top-left-radius: 70%;
+        }
+
+        .div5 {
+            border-top-right-radius: 70%;
+        }
+
+        .div6 {
+            border-bottom-left-radius: 70%;
+        }
+
+        .div7 {
+            border-bottom-right-radius: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>圆角边框</h1>
+    <p>border-radius 属性用于设置元素的外边框圆角</p>
+    <p>简写属性，四个值，分别代表左上角、右上角、右下角、左下角</p>
+    <h2>语法</h2>
+    <p>border-radius:length;</p>
+    <br><br>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+    <div class="div6">div6</div>
+    <div class="div7">div7</div>
+</body>
+
+</html>
