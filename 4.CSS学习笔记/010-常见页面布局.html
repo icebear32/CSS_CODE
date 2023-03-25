@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常见网页布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .top {
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(237,236,250);
+        }
+
+        .banner {
+            height: 40px;
+            line-height: 40px;
+            background-color: rgb(237,236,250);
+            margin: 10px auto;
+        }
+
+        .box {
+            height: 440px;
+            margin: 0 auto;
+        }
+
+        .left {
+            float: left;
+            width: 400px;
+            height: 440px;
+            line-height: 440px;
+            background-color: rgb(237,236,250);
+        }
+
+        .right {
+            float: right;
+            width: 1115px;
+            height: 440px;
+            line-height: 440px;
+            background-color: rgb(237,236,250);
+        }
+
+        /* 只要是通栏的盒子(和浏览器一样宽) 不需要指定宽度 */
+        .footer {
+            height: 200px;
+            line-height: 200px;
+            background-color: rgb(237,236,250);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

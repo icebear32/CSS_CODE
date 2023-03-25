@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>什么是浮动</title>
+    <style>
+        .left,
+        .right {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>什么是浮动？</h1>
+    <p>语法</p>
+    <p>选择器 { float: 属性值; }</p>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td>属性值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>none</td>
+                <td> 元素不浮动(默认值)</td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td>元素向左浮动</td>
+            </tr>
+            <tr>
+                <td>right</td>
+                <td>元素向右浮动</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <div class="left">左青龙</div>
+    <div class="right">右白虎</div>
+</body>
+
+</html>

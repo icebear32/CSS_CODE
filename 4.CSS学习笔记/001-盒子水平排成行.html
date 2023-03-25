@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子水平排成行</title>
+    <style>
+        div {
+            width: 150px;
+            height: 200px;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+
+        .divs {
+            /* 左浮动 */
+            float: left;
+            width: 150px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>为什么需要浮动？</h1>
+    <p>如何让多个块级盒子(div)水平排列成一行？</p>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <p>
+        比较难，虽然转换为行内块元素可以实现一行显示，
+        但是他们之间会有大的空白缝隙，很难控制
+    </p>
+    <h2>浮动让多个块级盒子(div)水平排列成一行</h2>
+    <div class="divs">div4</div>
+    <div class="divs">div5</div>
+    <div class="divs">div6</div>
+</body>
+</html>
