@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为什么需要清除浮动？</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        .father {
+            width: 800px;
+            border: 5px solid black;
+            margin: 0 auto;
+        }
+
+        .son {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: khaki;
+            border: 1px solid black;
+        }
+
+        .nofloat {
+            /* width: 300px; */
+            height: 200px;
+            background-color: cadetblue;
+            border: 1px solid black;
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>为什么需要清除浮动？</h1>
+    <br><br>
+    <div class="father">
+        <div class="son">子盒子浮动</div>
+        <div class="son">子盒子浮动</div>
+    </div>
+    <div class="nofloat">
+        <p>子盒子浮动，脱标，父盒子没有高度就为0，不会被撑开盒子</p>
+        <p>外部 div，非父盒子的</p>
+        <p>div 想不参与浮动，放在另一行，但是被浮动影响</p>
+        <p>由于浮动元素不再占用原文档流的位置，所以它会对后面的元素排版产生影响</p>
+        <p>所以用完浮动之后的元素应该要清除浮动</p>
+    </div>
+</body>
+
+</html>

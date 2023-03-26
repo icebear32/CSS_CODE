@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .div1 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .div2 {
+            clear: left;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+
+        .div3 {
+            float: right;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .div4 {
+            clear: right;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+
+        .div5 {
+            clear: both;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>清除浮动</h1>
+    <h2>清除浮动本质</h2>
+    <ol>
+        <li>清除浮动的本质是清除浮动元素造成的影响</li>
+        <li>如果父盒子本身有高度，则不需要清除浮动</li>
+        <li>清除浮动之后，父级就会根据浮动的子盒子自动检测高度，父级有了高度，就不会影响下面的标准流了</li>
+    </ol>
+    <p>清除浮动的策略是: 闭合浮动</p>
+
+    <h2>清除浮动</h2>
+    <p>语法：</p>
+    <p>选择器{clear:属性值;} </p>
+    <br><br>
+    <table border="1px">
+        <thead>
+            <tr>属性值</tr>
+            <tr>描述</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>left</td>
+                <td>不允许左侧有浮动元素清除左侧浮动的影响)</td>
+            </tr>
+            <tr>
+                <td>right</td>
+                <td>不允许右侧有浮动元素（清除右侧浮动的影响)</td>
+            </tr>
+            <tr>
+                <td>both</td>
+                <td>同时清除左右两侧浮动的影响</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <div class="div1">float left</div>
+    <div class="div2">clean left</div>
+    <br><br>
+    <div class="div3">float right</div>
+    <div class="div4">clean right</div>
+
+    <br><br>
+    <div class="div1">float right</div>
+    <div class="div5">both</div>
+    <div class="div3">clean right</div>
+</body>
+</html>
