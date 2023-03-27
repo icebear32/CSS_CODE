@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位 fixed</title>
+    <style>
+        .dj {
+            position: fixed;
+            top: 100px;
+            right: 100px;
+        }
+
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .son {
+            position: fixed;
+            top: 300px;
+            right: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>固定定位 fixed</h1>
+    <p>固定定位是元素固定于浏览器可视区的位置</p>
+    <p>场景：可以在浏览器页面滚动时元素的位置不会改变</p>
+    <h2>语法</h2>
+    <p>选择器 { position: fixed; }</p>
+    <h2>固定定位的特点</h2>
+    <ol>
+        <li>以浏览器的可视窗口为参照点移动元素
+            <ul>
+                <li>跟父元素没有任何关系</li>
+                <li>不随滚动条滚动</li>
+            </ul>
+        </li>
+        <li>固定定位不在占有原先的位置
+            <ul>
+                <li>固定定位也是脱标的</li>
+                <li>固定定位也可以看做是一种特殊的绝对定位</li>
+            </ul>
+        </li>
+    </ol>
+    <br><br>
+    <div class="dj">
+        <img src="../img/1.png" alt="#">
+    </div>
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+    <p>固定定位</p>
+</body>
+</html>

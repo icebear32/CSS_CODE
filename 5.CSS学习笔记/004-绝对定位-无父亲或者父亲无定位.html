@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位-无父亲或者父亲无定位</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son2 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son3 {
+            position: absolute;
+            top: 100px;
+            right: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son1">
+            <p>son1</p>
+        </div>
+        <div class="son2">
+            <p>son2</p>
+        </div>
+        <div class="son3">
+            <p>son3</p>
+        </div>
+    </div>
+</body>
+</html>

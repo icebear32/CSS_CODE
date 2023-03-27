@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位 relative</title>
+    <style>
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        .box3 {
+            position: relative;
+            top: 100px;
+            right: 70px;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+            text-align: right;
+        }
+
+        .box4 {
+            position: relative;
+            bottom: 100px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+
+        .box5 {
+            position: relative;
+            bottom: 100px;
+            right: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>相对定位 relative</h1>
+    <p>相对定位是元素在移动位置的时候，是相对于它原来的位置来说的</p>
+    <h2>语法</h2>
+    <p>选择器 { position: relative; }</p>
+    <ul>相对定位的特点
+        <li>相对于原来的位置来移动的</li>
+        <li>原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待</li>
+        <li>相对定位并没有脱标</li>
+    </ul>
+    <div class="box1">
+        <p>box1</p>
+        <p>position: relative;</p>
+        <p>top: 100px;</p>
+        <p>left: 100px;</p>
+    </div>
+    <div class="box2">box2</div>
+
+    <div class="box3">
+        <p>box3</p>
+        <p>position: relative;</p>
+        <p>top: 100px;</p>
+        <p>right: 70px;</p>
+    </div>
+    <div class="box2">box2</div>
+
+    <br><br>
+    <div class="box2">box2</div>
+    <div class="box4">
+        <p>box4</p>
+        <p>position: relative;</p>
+        <p>bottom: 100px;</p>
+        <p>left: 50px;</p>
+    </div>
+    
+    <br><br>
+    <div class="box2">box2</div>
+    <div class="box5">
+        <p>box5</p>
+        <p>position: relative;</p>
+        <p>bottom: 100px;</p>
+        <p>right: 50px;</p>
+    </div>
+</body>
+
+</html>
