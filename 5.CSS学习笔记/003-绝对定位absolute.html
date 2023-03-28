@@ -8,45 +8,49 @@
     <title>绝对定位 absolute</title>
     <style>
         .father {
-            width: 500px;
-            height: 500px;
+            width: 200px;
+            height: 200px;
             background-color: skyblue;
         }
 
         .son {
+            width:100px;
+            height: 100px;
+            background-color: khaki;
+        }
+
+        .son1 {
+            width: 300px;
+            height: 150px;
             position: absolute;
-            /* top: 10px;
-            left: 10px; */
-            /* top: 100px;
-            right: 200px; */
-            left: 0;
-            bottom: 0;
-            width: 200px;
-            height: 200px;
-            background-color: pink;
+            left: 50px;
+            top: 70px;
+        }
+
+        .father2 {
+            position: relative;
+        } 
+
+        .son2 {
+            position: absolute;
+            top: 50px;
+            left: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="father">
-        <h1>绝对定位 absolute</h1>
-        <p>绝对定位是元素在移动位置的时候，是相对于它祖先元素来说的</p>
-        <br>
-        <h2>语法</h2>
-        <p>选择器 { position: absolute; }</p>
-        <br>
-        <h2>绝对定位的特点</h2>
-        <ol>
-            <li>如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位（Document 文档）</li>
-            <li>如果祖先元素有定位（相对、绝对、固定定位），则以最近一级的有定位祖先元素为参考点移动位置</li>
-            <li>绝对定位不再占有原先的位置（脱标）</li>
-            <li>绝对定位是脱离标准流的</li>
-        </ol>
-        <div class="son">
+    <div class="father">father，没有设置到定位
+        <div class="son son1">
             <p>绝对定位</p>
             <p>无父亲或者父亲无定位</p>
+            <p>以浏览器为准定位（Document 文档）</p>
         </div>
+    </div>
+
+    <br><br>
+    <div class="father father2">
+        <div class="son son2"></div>
     </div>
 </body>
 

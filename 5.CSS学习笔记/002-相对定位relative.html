@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>相对定位 relative</title>
     <style>
-        .box1 {
-            position: relative;
-            top: 100px;
-            left: 100px;
+        div {
             width: 200px;
             height: 200px;
             background-color: khaki;
         }
 
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+        }
+
         .box2 {
-            width: 200px;
-            height: 200px;
             background-color: greenyellow;
         }
 
@@ -26,9 +28,6 @@
             position: relative;
             top: 100px;
             right: 70px;
-            width: 200px;
-            height: 200px;
-            background-color: khaki;
             text-align: right;
         }
 
@@ -36,18 +35,12 @@
             position: relative;
             bottom: 100px;
             left: 50px;
-            width: 200px;
-            height: 200px;
-            background-color: khaki;
         }
 
         .box5 {
             position: relative;
             bottom: 100px;
             right: 50px;
-            width: 200px;
-            height: 200px;
-            background-color: khaki;
             text-align: right;
         }
     </style>
@@ -63,6 +56,10 @@
         <li>原来在标准流的位置继续占有，后面的盒子仍然以标准流的方式对待</li>
         <li>相对定位并没有脱标</li>
     </ul>
+
+    <div class="box">没有relative</div>
+    <div class="box2">没有relative</div>
+
     <div class="box1">
         <p>box1</p>
         <p>position: relative;</p>
@@ -87,7 +84,7 @@
         <p>bottom: 100px;</p>
         <p>left: 50px;</p>
     </div>
-    
+
     <br><br>
     <div class="box2">box2</div>
     <div class="box5">

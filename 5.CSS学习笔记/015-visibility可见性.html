@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility 可见性</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: khaki;
+        }
+        .div1 {
+            visibility: hidden;
+            
+        }
+
+        .div3 {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>visibility 可见性</h1>
+    <p>visibility 属性用于指定一个元素应可见还是隐藏</p>
+    <ul>
+        <li>visibility：visible; 元素可视</li>
+        <li> visibility：hidden; 元素隐藏</li>
+    </ul>
+    <br><br>
+    <p>visibility 隐藏元素后，继续占有原来的位置</p>
+    <ul>
+        <li>隐藏元素想要原来位置， 就用 visibility：hidden</li>
+        <li>隐藏元素不想要原来位置， 就用 display：none</li>
+    </ul>
+
+    <div class="div1"></div>
+    <div class="div2">div2 元素隐藏</div>
+    <div class="div3"></div>
+    <div class="div2">div2 隐藏元素不想要原来位置</div>
+</body>
+
+</html>

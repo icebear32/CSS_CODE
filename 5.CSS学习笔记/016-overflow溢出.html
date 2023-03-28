@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow 溢出</title>
+    <style>
+        .div1 {
+            overflow: visible;
+            width: 200px;
+            height: 200px;
+            border: 3px solid khaki;
+            margin: 100px auto;
+        }
+
+        .div2 {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 3px solid khaki;
+            margin: 100px auto;
+        }
+
+        .div3 {
+            overflow: scroll;
+            width: 200px;
+            height: 200px;
+            border: 3px solid khaki;
+            margin: 100px auto;
+        }
+
+        .div4 {
+            overflow: auto;
+            width: 200px;
+            height: 200px;
+            border: 3px solid khaki;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>overflow 溢出</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>属性值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>visible</td>
+                <td>不剪切内容也不添加滚动条</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>不显示超过对象尺寸的内容，超出的部分隐藏掉</td>
+            </tr>
+            <tr>
+                <td>scroll</td>
+                <td>不管超出内容否，总是显示滚动条</td>
+            </tr>
+            <tr>
+                <td>auto</td>
+                <td>超出自动显示滚动条，不超出不显示滚动条</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="div1">
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+    </div>
+
+    <div class="div2">
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+    </div>
+
+    <div class="div3">
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+    </div>
+
+    <div class="div4">
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+        不剪切内容也不添加滚动条
+        不显示超过对象尺寸的内容，超出的部分隐藏掉
+        不管超出内容否，总是显示滚动条
+        超出自动显示滚动条，不超出不显示滚动条
+    </div>
+</body>
+</html>
