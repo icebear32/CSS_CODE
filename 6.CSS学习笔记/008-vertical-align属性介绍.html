@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align 属性介绍 图片、表单和文字对齐</title>
+    <style>
+        div {
+            width: 220px;
+            height: 170px;
+            background-color: khaki;
+            margin-top: 20px;
+        }
+
+        .img1 {
+            vertical-align: baseline;
+        }
+
+        .img2 {
+            vertical-align: top;
+        }
+
+        .img3 {
+            vertical-align: middle;
+        }
+
+        .img4 {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>vertical-align 属性介绍</h1>
+    <p>CSS 的 vertical-align 属性使用场景： 经常用于设置图片或者表单(行内块元素）和文字垂直对齐</p>
+    <p>用于设置一个元素的垂直对齐方式，但是它只针对于行内元素或者行内块元素有效</p>
+    <h2>语法</h2>
+    <p>vertical-align : baseline | top | middle | bottom</p>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>值</td>
+                <td>描述</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>baseline</td>
+                <td>默认 元素放置在父元素的基线上</td>
+            </tr>
+            <tr>
+                <td>top</td>
+                <td>把元素的顶端与行中最高元素的顶端对齐</td>
+            </tr>
+            <tr>
+                <td>middle</td>
+                <td>把此元素放置在父元素的中部</td>
+            </tr>
+            <tr>
+                <td>bottom</td>
+                <td>把元素的顶端与行中最低的元素的顶端对齐</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>案例 图片和文本对齐</h2>
+    <div>
+        <img src="../img/1.png" alt="#" class="img1">哆啦A梦
+    </div>
+    <div>
+        <img src="../img/2.png" alt="#" class="img2">哆啦A梦
+    </div>
+    <div>
+        <img src="../img/3.png" alt="#" class="img3">哆啦A梦
+    </div>
+    <div>
+        <img src="../img/4.png" alt="#" class="img4">哆啦A梦
+    </div>
+</body>
+
+</html>
