@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .clearfix {
+            clear: both;
+            overflow: auto;
+        }
+
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        .demo li {
+            float: left;
+            list-style: none;
+            padding: 2px;
+            border: 1px solid #ccc;
+            margin-right: 4px;
+            width: 20px;
+        }
+
+        .demo a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f36;
+            text-decoration: none;
+        }
+
+        /* 全换色 */
+        .div1 li:nth-child(n) {
+            background-color: green;
+        }
+
+        /* 隔行换色 偶数 */
+        .div2 li:nth-child(2n) {
+            background-color: green;
+        }
+
+        /* 隔行换色 不用表达式 偶数 */
+        .div3 li:nth-child(even) {
+            background-color: green;
+        }
+
+        /* 隔行换色 奇数 */
+        .div4 li:nth-child(2n+1) {
+            background-color: green;
+        }
+
+        /* 隔行换色 不用表达式 奇数 */
+        .div5 li:nth-child(odd) {
+            background-color: green;
+        }
+
+        /* 从第五个开始 */
+        .div6 li:nth-child(n+5) {
+            background-color: rgb(11, 0, 128);
+        }
+
+        /* 每隔三个变一个 */
+        .div7 li:nth-child(4n+1) {
+            background-color: rgb(11, 0, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo clearfix div1">全换色
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div2">隔行换色 偶数
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div3">隔行换色 不用表达式 偶数
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div4">隔行换色 奇数
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div5">隔行换色 不用表达式 奇数
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div6">n+5 从第五个开始变色
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+
+    <div class="demo clearfix div7">4n+1 每隔三个变一个
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

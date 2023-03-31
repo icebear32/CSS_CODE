@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+
+            /* 过渡效果 0.5秒完成 */
+            /* transition: all 0.5s; */
+            /* 因为每个浏览器的渲染都是不同的，需要给属性加一些前缀 */
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+
+            /* 鼠标经过图像鼠标变手势 */
+            cursor: pointer;
+        }
+
+        img:hover {
+            /* 鼠标经过图像，图像会缩放1.1倍 */
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../img/1.png" alt="哆啦A梦">
+</body>
+
+</html>

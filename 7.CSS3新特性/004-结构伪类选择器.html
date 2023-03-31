@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .clearfix {
+            clear: both;
+            overflow: auto;
+        }
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+        .demo li {
+            float: left;
+            list-style: none;
+            padding: 2px;
+            border: 1px solid #ccc;
+            margin-right: 4px;
+            width: 20px;
+        }
+
+        .demo a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f36;
+            text-decoration: none;
+        }
+
+        /* 选择某个元素的第一个子元素 */
+        .div1 li:first-child {
+            background-color: #0f0;
+        }
+
+        /* 选择某个元素的最后一个子元素 */
+        .div1 li:last-child {
+            background-color: rgb(0, 255, 247);
+        }
+
+        /* 选择某个元素的一个或多个特定的子元素 括号可以写数字或者表达式 */
+        .div1 li:nth-child(3) {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo clearfix div1">
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li><a href="">10</a></li>
+        </ul>
+    </div>
+</body>
+</html>

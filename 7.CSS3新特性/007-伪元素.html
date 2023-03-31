@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style type="text/css">
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        /* 选择首个字 */
+        .demo::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            float: left;
+        }
+
+        /* 选择首行 */
+        .demo::first-line {
+            color: #f00;
+        }
+
+        .demo01 {
+            width: 300px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* 在div之前插入图片 */
+        .demo01::before {
+            content: url(../img/1.png);
+            display: block;
+        }
+
+         /* 在div之后插入图片 */
+        .demo01::after {
+            content: url(../img/6.png);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        哆啦A梦是一只来自未来世界的猫型机器人，
+        用自己神奇的百宝袋和各种奇妙的道具帮助大雄解决各种困难。
+        哆啦A梦的故事将人们带进一个奇妙、充满想像力的世界。
+    </div>
+    <div class="demo01">
+        哆啦A梦
+    </div>
+</body>
+</html>
