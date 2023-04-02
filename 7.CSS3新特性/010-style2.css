@@ -1,0 +1,24 @@
+.diglog {
+    background-color: #6A6;
+    margin: 50px auto;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    /* 相对定位 */
+    position: relative;
+}
+
+.diglog::before {
+    content: '';
+    border-left: 0px solid #6A6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #6A6;
+    /* 绝对定位 */
+    position: absolute;
+    left: -10px;
+    top: 14px;
+}
