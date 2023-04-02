@@ -1,0 +1,57 @@
+div {
+    width: 260px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+}
+
+/* 默认 从上到下渐变 */
+.ceng1 {
+    background-image: linear-gradient(orange, green);
+}
+
+/* 从下到上渐变 */
+.ceng2 {
+    background-image: linear-gradient(to top, orange, green);
+}
+
+/* 从上到下渐变 */
+.ceng3 {
+    background-image: linear-gradient(to bottom, orange, green);
+}
+
+/* 从右到左渐变 */
+.ceng4 {
+    background-image: linear-gradient(to left, orange, green);
+}
+
+/* 从左到右渐变 */
+.ceng5 {
+    background-image: linear-gradient(to right, orange, green);
+}
+
+/* 从左到右渐变 橙色到50%开始渐变 */
+.ceng6 {
+    background-image: linear-gradient(to right, orange 50%, green 100%);
+}
+
+/* 多种颜色平分渐变 */
+.ceng7 {
+    background-image: linear-gradient(to right, orange, green, red);
+}
+
+/* 从左到右渐变 橙色到 30% 开始渐变,绿色到 60% 开始渐变 */
+.ceng8 {
+    background-image: linear-gradient(to right, orange 30%, green 60%, red 100%);
+}
+
+/* 从左到右渐变 橙色到 100px 开始渐变,绿色到 160px 开始渐变 */
+.ceng9 {
+    background-image: linear-gradient(to right, orange 100px, green 160px, red 260px);
+}
+
+/* 用90deg(从左到右渐变) 橙色到 100px 开始渐变,绿色到 160px 开始渐变 */
+.ceng10 {
+    background-image: linear-gradient(90deg, orange 100px, green 160px, red 260px);
+}
