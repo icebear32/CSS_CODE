@@ -1,0 +1,100 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: khaki;
+    cursor: pointer;
+}
+
+.ceng1 {
+    transition-duration: 2s;
+    /* 所有都变化 */
+    transition-property: all;
+}
+
+.ceng2 {
+    transition-duration: 3s;
+    /* 只有宽度有过渡变化 */
+    transition-property: width;
+}
+
+.ceng3 {
+    transition-duration: 3s;
+    /* 只有高度有过渡变化 */
+    transition-property: height;
+}
+
+.ceng1:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.ceng2:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.ceng3:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.ceng4 {
+    transition-duration: 2s;
+    transition-property: all;
+    /* 延迟过渡 */
+    transition-delay: .2s;
+}
+
+.ceng4:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.ceng5 {
+    transition-duration: 2s;
+    transition-property: all;
+    /* 延迟过渡 */
+    transition-delay: .2s;
+    /* 默认值 ease */
+    transition-timing-function: ease;
+}
+
+.ceng5:hover {
+    width: 300px;
+    height: 200px;
+}
+
+.ceng6 {
+    transition-duration: 2s;
+    transition-property: all;
+    /* 延迟过渡 */
+    transition-delay: .2s;
+    /* 默认值 ease */
+    transition-timing-function: ease;
+}
+
+.ceng6:hover {
+    width: 300px;
+    height: 200px;
+    /* 过渡背景颜色 */
+    background-color: coral;
+}
+
+.ceng7 {
+    transition-duration: 2s;
+    transition-property: all;
+    /* 延迟过渡 */
+    transition-delay: .2s;
+    /* 默认值 ease */
+    transition-timing-function: ease;
+}
+
+.ceng7:hover {
+    width: 300px;
+    height: 200px;
+    /* 过渡背景颜色 */
+    background-color: coral;
+    /* 过渡边框 */
+    border-radius: 40px;
+}

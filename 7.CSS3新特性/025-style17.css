@@ -1,0 +1,50 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: khaki;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: .2s;
+}
+
+.ceng1 {
+    
+    /* 慢速开始，然后变快，然后慢速结束的过渡效果 */
+    transition-timing-function: ease;
+}
+
+.ceng2 {
+    /* 以慢速开始的过渡效果 */
+    transition-timing-function: ease-in;
+}
+
+.ceng3 {
+    /* 以慢速开始和结束的过渡效果 */
+    transition-timing-function: ease-in-out;
+}
+
+.ceng4 {
+    /* 以慢速结束的过渡效果 */
+    transition-timing-function: ease-out;
+}
+
+.ceng5 {
+    /* 以相同速度开始至结束的过渡效果 */
+    transition-timing-function: linear;
+}
+
+.ceng6 {
+    /* 直接变化 */
+    transition-timing-function: step-start;
+}
+
+.ceng7 {
+    /* transition-duration 设置的秒数内都不变，结束后立即变化 */
+    transition-timing-function: step-end;
+}
+
+div:hover {
+    width: 300px;
+}
