@@ -1,0 +1,98 @@
+.rect1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    /* 加上动画 mymove，执行两秒 反复执行  */
+    animation: mymove1 2s infinite;
+}
+
+@keyframes mymove1 {
+    from {
+        top: 0;
+        left: 20%;
+    }
+
+    to {
+        top: 0;
+        left: 80%;
+    }
+}
+
+.rect2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    /* 加上动画 mymove，执行两秒 反复执行  */
+    animation: mymove2 2s infinite;
+}
+
+@keyframes mymove2 {
+    0% {
+        top: 0;
+        left: 20%;
+    }
+
+    25% {
+        top: 0;
+        left: 80%;
+    }
+
+    50% {
+        top: 80%;
+        left: 80%;
+    }
+
+    75% {
+        top: 80%;
+        left: 20%;
+    }
+
+    100% {
+        top: 0;
+        left: 20%;
+    }
+}
+
+.rect3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    /* 加上动画 mymove，执行两秒 反复执行  */
+    animation: mymove3 5s infinite;
+}
+
+@keyframes mymove3 {
+    0% {
+        top: 0;
+        left: 20%;
+        background-color: red;
+    }
+
+    25% {
+        top: 0;
+        left: 80%;
+        background-color: blue;
+    }
+
+    50% {
+        top: 80%;
+        left: 80%;
+        background-color: green;
+    }
+
+    75% {
+        top: 80%;
+        left: 20%;
+        background-color: black;
+    }
+
+    100% {
+        top: 0;
+        left: 20%;
+        background-color: red;
+    }
+}
