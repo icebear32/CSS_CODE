@@ -1,0 +1,24 @@
+.demo {
+    margin: 30px auto;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 50px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.demo1 {
+    margin: 0px auto;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* height: 50px; */
+
+    /* 必须要带有 overflow: hidden; white-space: nowrap; */
+    text-overflow: ellipsis;
+    /* 隐藏溢出的部分 */
+    overflow: hidden;
+    /* 强制不换行 */
+    white-space: nowrap;
+}
