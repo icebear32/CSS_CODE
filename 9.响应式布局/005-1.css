@@ -1,0 +1,9 @@
+#div0 {
+    width: 100%;
+    height: 500px;
+}
+
+#div0 div {
+    float: left;
+    height: 100px;
+}

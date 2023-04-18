@@ -1,0 +1,15 @@
+#div0 div {
+    width: 50%;
+}
+
+#div0 div:nth-child(1) {
+    background-color: khaki;
+}
+
+#div0 div:nth-child(2) {
+    background-color: skyblue;
+}
+
+#div0 div:nth-child(3) {
+    background-color: orangered;
+}
