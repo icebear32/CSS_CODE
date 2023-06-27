@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 主轴方向与换行</title>
+    <style>
+        #div0 {
+            width: 300px;
+            background-color: khaki;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #div0 div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        #div1 {
+            width: 400px;
+            height: 200px;
+            background-color: khaki;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #div1 div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        #div2 {
+            width: 400px;
+            height: 200px;
+            background-color: khaki;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+        }
+
+        #div2 div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <p>换行</p>
+    <div id="div0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br><br>
+    <p>换列</p>
+    <div id="div1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br><br>
+    <p>换列 反排序</p>
+    <div id="div2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

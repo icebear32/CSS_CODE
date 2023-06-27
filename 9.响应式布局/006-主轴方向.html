@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 主轴方向与换行</title>
+    <style>
+        #div0 {
+            width: 500px;
+            background-color: khaki;
+            display: flex;
+        }
+
+        #div0 div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .div1 {
+            flex-direction: row-reverse;
+        }
+
+        .div2 {
+            flex-direction: column;
+        }
+
+        .div3 {
+            flex-direction: column-reverse;
+        }
+
+        #divs {
+            width: 300px;
+            background-color: khaki;
+            display: flex;
+        }
+
+        #divs div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+
+        #divnow {
+            width: 300px;
+            background-color: khaki;
+            display: flex;
+        }
+
+        #divnow div {
+            /* 不设置宽度 */
+            /* width: 100px; */
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>flex-direction: 默认值 row</p>
+    <div id="div0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>flex-direction: row-reverse</p>
+    <div id="div0" class="div1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>flex-direction: column</p>
+    <div id="div0" class="div2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>flex-direction: column-reverse</p>
+    <div id="div0" class="div3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>当父级的 div 的总宽度小于所有子级的总和宽度</p>
+    <div id="divs">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br><br>
+    <p>当子级元素没设置宽度</p>
+    <div id="divnow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

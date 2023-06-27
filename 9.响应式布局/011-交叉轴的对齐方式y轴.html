@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交叉轴的对齐方式</title>
+    <style>
+        #div0 {
+            width: 400px;
+            background-color: khaki;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: column wrap;
+            justify-content: space-around;
+            height: 400px;
+        }
+
+        #div0 div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        .div1 {
+            align-items: flex-start;
+        }
+
+        .div2 {
+            align-items: flex-end;
+        }
+
+        .div3 {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>align-items: flex-start;</p>
+    <div id="div0" class="div1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>align-items: flex-end;</p>
+    <div id="div0" class="div2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+    <p>align-items: center;</p>
+    <div id="div0" class="div3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <br></br>
+</body>
+
+</html>
